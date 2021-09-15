@@ -12,7 +12,7 @@
 </body>
 <script>
     var scripts = document.getElementsByTagName('script');
-    for (var item of scripts) {
+    for (item of scripts) {
         if (item.integrity != null) {
             document.getElementById('test').innerHTML = item.integrity;
         }
