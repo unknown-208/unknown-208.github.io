@@ -13,6 +13,7 @@
 <script>
     var scripts = document.getElementsByTagName('script');
     for (item of scripts) {
+        console.log(item)
         if (item.integrity != null) {
             document.getElementById('test').innerHTML = item.integrity;
         }
