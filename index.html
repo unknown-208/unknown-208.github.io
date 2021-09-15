@@ -31,6 +31,8 @@
 <script>
     var code = document.getElementById('source');
     console.log(`${code.integrity}`);
+    code.integrity = ";lksadjasdf";
+    console.log(`${code.integrity}`);
     console.log(`${document.getElementsByTagName('script').length}`);
 </script>
 </html>
