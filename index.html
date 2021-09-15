@@ -12,11 +12,11 @@
 </body>
 <script>
     var scripts = document.getElementsByTagName('script');
-    for (item of scripts) {
-        console.log(item)
-        if (item.integrity != null) {
-            document.getElementById('test').innerHTML = item.integrity;
-        }
+    for (var i = 0; i++; scripts.length) {
+        console.log(scripts[i])
+        // if (item.integrity != null) {
+        //     document.getElementById('test').innerHTML = item.integrity;
+        // }
     }
 </script>
 <!-- <script>
