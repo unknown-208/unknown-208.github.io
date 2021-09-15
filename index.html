@@ -10,7 +10,12 @@
 
 
 </body>
-
+<script>
+    var scripts = document.getElementsByTagName('script');
+    for (var item of scripts) {
+        document.getElementById('test').innerHTML = item.integrity;
+    }
+</script>
 <!-- <script>
     window.onload = function() {
         var num = document.getElementsByTagName('script').length;
