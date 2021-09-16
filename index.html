@@ -52,6 +52,10 @@
 </script>
 
 <script>
+
+    var currentSource = document.getElementById('source');
+    currentSource.remove();
+
     var newScript = document.createElement('script');
     document.head.appendChild(newScript);
     newScript.src = "https://unknown-208.github.io/integrityTest3.js";
