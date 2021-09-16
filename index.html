@@ -8,27 +8,21 @@
 <h1>Script Test</h1>
 <p id="test"></p>
 
-
 </body>
+
 <script>
-    var scripts = document.getElementsByTagName('script');
-    
-    //for (var i = 0; i < scripts.length; i++) {
-    //    console.log(`${i + 1}`);
-
-    //}
-
-    document.getElementById('test').innerHTML = "The number of scripts in stage 1: " + i + 1;
-
+    var scripts = document.getElementsByTagName('script').length;
+    document.getElementById('test').innerHTML = "The number of scripts in stage 1: " + scripts;
 </script>
+
 <script>
     window.onload = function() {
         var num = document.getElementsByTagName('script').length;
         document.getElementById('test').innerHTML += "\nThe total number of scripts on the page is: " + num;
     }
 </script>
+
 <script src="https://unknown-208.github.io/integrityTest.js" integrity="sha384-5r6BMf2M2CS/RjTkgZMYI2x00WZa5/BRdbQWrtmFRFbaOHK4dkzj8cWeYz46La4U" crossorigin="anonymous" id="source">
-    // alert('bl;jakfls;djfjfsdf');
 </script>
 
 <script>
@@ -40,7 +34,6 @@
 </script>
 
 <script src="https://unknown-208.github.io/integrityTest2.js" integrity="sha384-UXKOiCxREA/OSrS4bKEsS/z6ZZwwGNkYY8kHas4fgjVfKqv0D04jKCOWBbPi2WHV" crossorigin="anonymous" id="source2" defer>
-    // alert('bl;jakfls;djfjfsdf');
 </script>
 
 <script>
@@ -52,7 +45,6 @@
 </script>
 
 <script>
-
     var currentSource = document.getElementById('source');
     currentSource.remove();
 
