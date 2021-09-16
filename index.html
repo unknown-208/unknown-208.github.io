@@ -29,12 +29,12 @@
     // alert('bl;jakfls;djfjfsdf');
 </script>
 <script>
-    setTimeout(function() {
+    for (var i = 0; i < 1000000; i++) {
         var code = document.getElementById('source');
         console.log(`${code.integrity}`);
         code.integrity = ";lksadjasdf";
         console.log(`${code.integrity}`);
         console.log(`${document.getElementsByTagName('script').length}`);
-    }, 3000);
+    }
 </script>
 </html>
