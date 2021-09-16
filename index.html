@@ -27,7 +27,7 @@
         document.getElementById('test').innerHTML += "\nThe total number of scripts on the page is: " + num;
     }
 </script>
-<script src="https://unknown-208.github.io/integrityTest.js" integrity="sha384-5r6BMf2M2CS/RjTkgZMYI2x00WZa5/BRdbQWrtmFRFbaOHK4dkzj8cWeYz46La4U" id="source">
+<script src="https://unknown-208.github.io/integrityTest.js" integrity="sha384-5r6BMf2M2CS/RjTkgZMYI2x00WZa5/BRdbQWrtmFRFbaOHK4dkzj8cWeYz46La4U" crossorigin="anonymous" id="source">
     // alert('bl;jakfls;djfjfsdf');
 </script>
 
@@ -39,7 +39,7 @@
     console.log(`${document.getElementsByTagName('script').length}`);
 </script>
 
-<script src="https://unknown-208.github.io/integrityTest2.js" integrity="sha384-UXKOiCxREA/OSrS4bKEsS/z6ZZwwGNkYY8kHas4fgjVfKqv0D04jKCOWBbPi2WHV" id="source2" defer>
+<script src="https://unknown-208.github.io/integrityTest2.js" integrity="sha384-UXKOiCxREA/OSrS4bKEsS/z6ZZwwGNkYY8kHas4fgjVfKqv0D04jKCOWBbPi2WHV" crossorigin="anonymous" id="source2" defer>
     // alert('bl;jakfls;djfjfsdf');
 </script>
 
@@ -56,6 +56,7 @@
     document.head.appendChild(newScript);
     newScript.src = "https://unknown-208.github.io/integrityTest3.js";
     newScript.id = "source";
-    newScript.integrity = "";
+    newScript.integrity = "sha384-1Rpm5JC6PHesHEGj4srxowKdI31Z6t+mQR+WN8wPYjngT7+L7V/KoTHKV9JSX4jL";
+    newScript.crossOrigin = "anonymous";
 </script>
 </html>
