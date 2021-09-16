@@ -12,13 +12,13 @@
 
 <script>
     var scripts = document.getElementsByTagName('script').length;
-    document.getElementById('test').innerHTML = "The number of scripts in stage 1: " + scripts;
+    console.log(`Number of scripts: ${scrips}`);
 </script>
 
 <script>
     window.onload = function() {
         var num = document.getElementsByTagName('script').length;
-        document.getElementById('test').innerHTML += "\nThe total number of scripts on the page is: " + num;
+        document.getElementById('test').innerHTML += "The total number of scripts on the page is: " + num;
     }
 </script>
 
@@ -30,7 +30,7 @@
     console.log(`${code.integrity}`);
     code.integrity = ";lksadjasdf";
     console.log(`${code.integrity}`);
-    console.log(`${document.getElementsByTagName('script').length}`);
+    console.log(`Number of scripts: ${document.getElementsByTagName('script').length}`);
 </script>
 
 <script src="https://unknown-208.github.io/integrityTest2.js" integrity="sha384-UXKOiCxREA/OSrS4bKEsS/z6ZZwwGNkYY8kHas4fgjVfKqv0D04jKCOWBbPi2WHV" crossorigin="anonymous" id="source2" defer>
@@ -41,7 +41,7 @@
     console.log(`${code.integrity}`);
     code.integrity = "changed";
     console.log(`${code.integrity}`);
-    console.log(`${document.getElementsByTagName('script').length}`);
+    console.log(`Number of scripts: ${document.getElementsByTagName('script').length}`);
 </script>
 
 <script>
